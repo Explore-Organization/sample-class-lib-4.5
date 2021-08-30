@@ -41,3 +41,7 @@ jobs:
         
       - name: Build the Solution
         run: msbuild NugetTestLibrary/NugetTestLibrary.sln /p:Configuration=Release /p:Platform="Any CPU"
+
+      - name: Nuget Add Source
+        run: nuget sources Add -Name "github" -Source https://nuget.pkg.github.com/KoushikMahakal/index.json -UserName KoushikMahakal -Password ${{ secrets.GITHUB_TOKEN }}
+        
