@@ -44,4 +44,6 @@ jobs:
 
       - name: Nuget Add Source
         run: nuget sources Add -Name "github" -Source https://nuget.pkg.github.com/KoushikMahakal/index.json -UserName KoushikMahakal -Password ${{ secrets.GITHUB_TOKEN }}
+      - name: Nuget SetAPIKey
+        run: nuget setapikey ${{ secrets.GITHUB_TOKEN }} -Source "GitHub"
         
