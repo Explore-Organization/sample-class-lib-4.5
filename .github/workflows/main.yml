@@ -39,6 +39,9 @@ jobs:
       - name: Restore NuGet packages
         run: nuget restore NugetTestLibrary/NugetTestLibrary.sln
         
+      - run: msbuild -t:restore
+        working-directory: NugetTestLibrary
+        
       - name: Build the Solution
         run: msbuild NugetTestLibrary/NugetTestLibrary.sln /p:Configuration=Release /p:Platform="Any CPU"
 
