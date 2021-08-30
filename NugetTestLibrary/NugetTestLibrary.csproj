@@ -7,8 +7,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageOutputPath>bin\release\</PackageOutputPath>
     <Version>1.0.0</Version>
-    <Authors>Koushik Mahakal</Authors>
-	<Company>Travelport</Company>
+    <Authors>KoushikMahakal</Authors>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
