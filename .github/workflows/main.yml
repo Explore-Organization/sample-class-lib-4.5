@@ -48,5 +48,5 @@ jobs:
         run: nuget setapikey ${{ secrets.GITHUB_TOKEN }} -Source "GitHub"
       - name: Publish the package to GitHub packages
         working-directory: NugetTestLibrary
-        run: nuget push bin\Release\*.nupkg -source "github" -SkipDuplicate
+        run: nuget push bin\Release\*.nupkg -source "GitHub" -SkipDuplicate
         
